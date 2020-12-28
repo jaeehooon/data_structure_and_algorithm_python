@@ -1,0 +1,15 @@
+# 4.1.4 __name__ 변수
+
+
+hello = "hello"
+
+
+def world():
+    return "world"
+
+
+# 대화식 인터프리터 또는 .py 파일을 직접 실행하면 파이썬은 __name__을 __main__으로 설정!
+if __name__ == '__main__':
+    print("{0} 직접 실행됨.".format(__name__))
+else:
+    print("{0} 임포트됨".format(__name__))
