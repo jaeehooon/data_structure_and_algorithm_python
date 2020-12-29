@@ -7,3 +7,4 @@
 
 - 파이썬 자료구조와 알고리즘 공부
 - Pycharm (Mac OS)
+- python == 3.7.9
