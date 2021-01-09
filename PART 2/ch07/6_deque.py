@@ -1,5 +1,5 @@
-# 7.3 eㅔ크
-from queue import Queue
+# 7.3 데크
+from queue_ import Queue
 
 
 class Deque(Queue):
