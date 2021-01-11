@@ -1,4 +1,5 @@
 # 7.5 연결 리스트
+# 후입선출(stack)
 from node_ import Node
 
 

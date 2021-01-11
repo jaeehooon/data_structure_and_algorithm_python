@@ -1,4 +1,6 @@
 # 7.5 연결 리스트
+
+
 class Node(object):
     def __init__(self, value=None, pointer=None):
         self.value = value

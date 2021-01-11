@@ -14,6 +14,9 @@ class PriorityQueue(object):
     def pop(self):
         return heapq.heappop(self._queue)[-1]
 
+    def __repr__(self):
+        return repr(self._queue)
+
 
 class Item(object):
     def __init__(self, name):
@@ -30,6 +33,7 @@ def test_priority_queue():
     q.push(Item("test2"), 4)
     q.push(Item("test3"), 3)
 
+    print(q)
     assert(str(q.pop()) == "Item('test2')")
     print("테스트 통과!")
 
