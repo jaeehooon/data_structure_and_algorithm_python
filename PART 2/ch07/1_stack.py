@@ -20,7 +20,7 @@ class Stack(object):
 
     def size(self):
         return len(self.items)
-
+    
     def peek(self):
         if self.items:
             return self.items[-1]
