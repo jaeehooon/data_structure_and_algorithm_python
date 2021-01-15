@@ -88,13 +88,13 @@ class LinkedListFIFO(object):
 
     # 값에 해당하는 노드를 삭제한다.
     def deleteNodeByValue(self, value):
-        if not self.head or not self.head.pointer:
+        if not self.head or not self.head.pointer:          # head -> None 이거나 연결 리스트에 노드가 하나만 있을 때
             self._deleteFirst()
         else:
             node, prev, i = self._find_by_value(value)
-            if node and node.value == value:
+            if node and node.value == value:                # 해당 노드가 있고 노드의 값이 입력받은 value와 같을 때
                 self.length -= 1
-                if i == 0 or not prev:
+                if i == 0 or not prev:                      # 오타???? i == 0이 없어야 말이 되지 않나 싶음. prev가 None이면 첫번째 노드를 가리킴
                     self.head = node.pointer
                     self.tail = node.pointer
                 else:
